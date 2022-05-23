@@ -1,0 +1,45 @@
+{
+  "name": "cypress-training",
+  "version": "1.0.0",
+  "description": "This is Workshop about Cypress",
+  "main": "index.js",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "cypress": "^9.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-multi-reporters": "^1.6.0",
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "typescript": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebas962/cypress-training"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
+  "author": "[Sebastian Gomez Graciano] <[sebastian.gomezg@perficient.com]> ([https://github.com/sebas962)]",
+  "license": "MIT",
+  "scripts": {
+    "test:open": "npm run lint && cypress open",
+    "test": "cypress run",
+    "lint": "eslint ./cypress/integration/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "delete:reports": "rm -rf cypress/reports/*",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/report.json",
+    "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports",
+    "pretest": "npm run delete:reports",
+    "posttest": " npm run combine-reports && npm run generate-report"
+  }
+}
