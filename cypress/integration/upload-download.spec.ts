@@ -13,7 +13,7 @@ describe("the user navigates", () => {
 
   it("should upload file and verify the file title", () => {
     fileUpload = "terminal_input_screenshot.png";
-    text = fileUpload.slice(0, -4);;
+    text = fileUpload.slice(0, -4);
     // Arrange
     uploadPage.visitUploadPage();
     // Action
