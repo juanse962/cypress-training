@@ -17,7 +17,7 @@ describe("the user navigates", () => {
   it("User verifies what the file should return", () => {
     // Arrange
     const txtContent = "This sentence must be verified in the TXT file";
-    const pdfContent = "Generic text for PDF  ";
+    const pdfContent = "Generic text for PDF";
     const txtPath = "cypress/downloads/info.txt";
     const pdfPath = "cypress/downloads/info.pdf";
     downloadPage.visitDownloadPage();
