@@ -6,7 +6,7 @@ class DownloadFilePage {
   private generateTxtFile: string;
   private TxtDownloadButton: string;
 
-  private downloadPdfFile: string;
+  private downloadPdfFile   : string;
   private generatePdfFile: string;
   private TxtDownPdfButton: string;
 
@@ -15,7 +15,7 @@ class DownloadFilePage {
     this.downloadTxtFile = "#textbox";
     this.generateTxtFile = "#createTxt";
     this.TxtDownloadButton = "#link-to-download";
-    this.downloadPdfFile = "#pdfbox";
+    this.downloadPdfFile     = "#pdfbox";
     this.generatePdfFile = "#createPdf";
     this.TxtDownPdfButton = "#pdf-link-to-download";
   }
@@ -28,16 +28,16 @@ class DownloadFilePage {
     cy.get(this.downloadTxtFile).type(content);
   }
 
-  setDownloadTxtFile() {
+  downloadTxtContent() {
     cy.get(this.generateTxtFile).click();
     cy.get(this.TxtDownloadButton).click();
   }
 
   pdfContent(content: string) {
-    cy.get(this.downloadPdfFile).type(content);
+    cy.get(this.downloadPdfFile ).type(content);
   }
 
-  setDownloadPdfFile() {
+  downloadPdfContent() {
     cy.get(this.generatePdfFile).click();
     cy.get(this.TxtDownPdfButton).click();
   }

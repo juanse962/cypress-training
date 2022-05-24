@@ -23,9 +23,9 @@ describe("the user navigates", () => {
     downloadPage.visitDownloadPage();
     // Action
     downloadPage.pdfContent(pdfContent);
-    downloadPage.setDownloadPdfFile();
+    downloadPage.downloadPdfContent();
     downloadPage.txtContent(txtContent);
-    downloadPage.setDownloadTxtFile();
+    downloadPage.downloadTxtContent();
     // Assert
     downloadPage.verifyDownloatedContent(pdfPath).should("eq", pdfContent);
     downloadPage.verifyDownloatedContent(txtPath).should("eq", txtContent);
