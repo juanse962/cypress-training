@@ -1,4 +1,4 @@
-import 'cypress-file-upload';
+import "cypress-file-upload";
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -24,8 +24,8 @@ import 'cypress-file-upload';
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
-})
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false;
+});
