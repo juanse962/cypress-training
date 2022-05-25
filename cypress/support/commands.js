@@ -1,6 +1,5 @@
 import "cypress-file-upload";
 import "cypress-iframe";
-require("cypress-iframe");
 
 // ***********************************************
 // This example commands.js shows you how to
