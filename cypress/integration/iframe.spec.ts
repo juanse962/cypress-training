@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
 
-import { IframePage } from "../page/index";
+import {IframePage} from "../page/index";
 
 describe("the user navigates to the Iframe  page should", () => {
   let iframePage: IframePage;
