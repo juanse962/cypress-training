@@ -8,6 +8,7 @@
     "@typescript-eslint/parser": "^5.21.0",
     "cypress": "^9.6.0",
     "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.0.1",
     "cypress-multi-reporters": "^1.6.0",
     "eslint": "^8.14.0",
